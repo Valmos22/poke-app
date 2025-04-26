@@ -16,7 +16,7 @@
 }
 
 .contenedor_titulo img {
-    width: 2%;
+    width: 3rem;
 }
 
 .data_pokemones {
@@ -272,6 +272,10 @@
 /* RESPONSIVE */
 @media (max-width: 480px) {
 
+    .contenedor_titulo img {
+        width: 15%;
+    }
+
     .contenedor_favoritos {
         margin: 0;
     }
@@ -300,6 +304,10 @@
     
     .pokemon_card, .button_pagination {
         width: 35%;
+    }
+
+    .contenedor_all_details{
+        margin-top: 2rem;
     }
 
     .contenedor_all_details, .pokemon_card_det, .contenedor_poke_details {
@@ -339,6 +347,10 @@
     }
     .cotenedor_pokemones, .details_poke {
         width: 100% !important;
+    }
+
+    .contenedor_all_details{
+        margin-top: 2rem;
     }
     
     .pokemon_card, .button_pagination {
