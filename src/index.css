@@ -1,0 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+    --font-family: cursive;
+    line-height: 1.5;
+    font-weight: 400;
+  
+    --main-bg-color: #000000;
+    --font-nav-color: rgba(255, 255, 255, .12);
+    --nav-background: #717171;
+    --font-main-color: #fff;
+    --container-width-height: 100%;
+  }
+  
+  body {
+    margin: 0px !important;
+    background: var(--main-bg-color);
+  }
+
+  * {
+    font-size: 16px;
+    font-family: var(--font-family);
+  }
