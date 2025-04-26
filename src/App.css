@@ -308,6 +308,15 @@
 
     .contenedor_all_details{
         margin-top: 2rem;
+        flex-direction: column;
+    }
+
+    .contenedor_all_details > div {
+        width: 100%;
+    }
+
+    .poke_details_gif img {
+        width: 50%;
     }
 
     .contenedor_all_details, .pokemon_card_det, .contenedor_poke_details {
