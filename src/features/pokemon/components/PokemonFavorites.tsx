@@ -1,4 +1,5 @@
 import { useFavoritesContext } from '../../../context/FavoritesContext';
+import { Toast } from '../../../shared/utils/alert';
 import { Button } from '../../filters/components/Button';
 
 const PokemonFavorites = () => {
@@ -6,6 +7,10 @@ const PokemonFavorites = () => {
   
   const eliminaPokemon = (name: string) => {
     eliminarPokemon(name);
+    Toast.fire({
+      icon: "success",
+      title: `Se elimino ${name} de tus favoritos!`
+    });
   };
 
   return (

@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { useFavoritesContext } from "../../../context/FavoritesContext";
 import { usePokemonContext } from "../../../context/PokemonContext";
+import { Toast } from "../../../shared/utils/alert";
 import { Button } from "../../filters/components/Button";
 import PokemonModal from "./PokemonModal";
 
@@ -17,6 +18,10 @@ const PokemonDetails = () => {
 
     const agregaPokemon = () => {
       if (selectedPokemon) {
+        Toast.fire({
+          icon: "success",
+          title: `Se agrego ${selectedPokemon.name} a tus favoritos`
+        });
         agregarPokemon({
           name: selectedPokemon.name,
           img: selectedPokemon.img,
